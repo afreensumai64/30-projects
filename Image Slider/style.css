@@ -1,0 +1,51 @@
+*,
+* :before,
+* :after
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: lightcoral;
+}
+.container {
+    background-color: linen;
+    width: 60%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.image-container {
+    width: 100%;
+    position: relative;
+  
+img {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+.active {
+    display: block;
+}
+.dot-container {
+    width: 150px;
+    margin: 20px auto 0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dot-container button {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border-color: transparent;
+    border: 3px;
+}
+.dot-container button: nth child(1)
