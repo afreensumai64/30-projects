@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    background: linear-gradient(to left,#ffefd5, #87cefa);
+    font-family:cursive;
+}
+.heading{
+    color: rgb(47, 11, 65);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.info{
+    text-align: center;
+    color: rgb(47, 12, 65);
+    font-size: 18px;
+
+}
+.app{
+    display: flex;              
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    padding: 50px;
+    
+
+}
+.note{
+    height: 200px;
+    font-size: 18px;
+    padding: 17px;
+    border-radius: 15px;
+    box-shadow: darkgrey;
+    resize: none;
+    color: darkorchid;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.note::placeholder{
+    color: gray;
+    opacity: 0.5;
+}
+.note:hover,
+.note:focus{
+
+    box-shadow: #87cefa;
+    background: white;
+
+}
+btn{
+    height:200px ;
+    border:none ;
+    border-radius:10% ;
+    font-size:70px ;
+    font-weight:700 ;
+    color:#5b125a ;
+    cursor: pointer;
+
+}
